@@ -18,6 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('/pizzas', function () {
-    //return view('pizzas');
-    return("pizza");
+    return view('pizzas', ['type' => 'hawaiian', 'base'=> 'cheesy', 'toppings'=>'onions']);
+    //return("pizza");
 });
